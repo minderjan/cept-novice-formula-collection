@@ -1,0 +1,18 @@
+name: build
+on: [push, pull_request]
+
+jobs:
+    build_report:
+        runs-on: ubuntu-latest
+        name: Build Report
+        steps:
+          - name: Set up Git repository
+            uses: actions/checkout@v2
+          - name: Setup LaTeX
+            uses: xu-cheng/latex-action@v2
+            with:
+              root_file: collection.tex
+          - uses: actions/upload-artifact@v2
+            with:
+              name: collection
+              path: collection.pdf
