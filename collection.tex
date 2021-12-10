@@ -1,11 +1,56 @@
-\documentclass[a4paper, 12pt]{report}
-\usepackage[paper=a4paper, hmargin={2cm, 2cm}, vmargin={2cm, 2cm}]{geometry}
+\documentclass[a4paper, 10pt, ngerman, xcolor=dvipsnames]{report}
+\usepackage[paper=a4paper, hmargin={1.5cm, 1.5cm}, vmargin={2.5cm, 2cm}, headheight=12pt]{geometry}
+\usepackage[utf8]{inputenc}
+
+% Dependencies
+\usepackage{fancyhdr}
+\usepackage{babel}
+\usepackage{siunitx}
+\usepackage{xcolor, colortbl}
+\usepackage{libs/tikzit}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+% Image Styles
+\input{images/styles/styles.tikzstyles}
+
+\DeclareMathSizes{20}{20}{20}{20}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\sisetup{locale = DE}
+
+% Header
+\lhead{Novice License (HB3)}
+\rhead{Formula}
+
+% Footer
+\rfoot{\thepage}
+\lfoot{Jan Minder}
 
 \begin{document}
 
-    \begin{titlepage}
-        \LARGE Novice License - Formula Collection
-    \end{titlepage}
 
+\begin{multicols}{2}
+
+    % Image: SI Calculations
+    \begin{Figure}
+        \centering
+        \tcbox[size=fbox,colback=white]{
+            \input{components/image.si-circle}
+        }
+    \end{Figure}
+
+    % Table: SI Units
+    \centering
+    \input{components/table.si-units}
+
+\end{multicols}
 
 \end{document}
