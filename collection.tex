@@ -24,7 +24,12 @@
 \pagestyle{fancy}
 \fancyhf{}
 
+% SI Setup
 \sisetup{locale = DE}
+\NewDocumentCommand{\siprefix}{m}{%
+  \unit{#1\nonexistentunitjustforprefixes}%
+}
+\DeclareSIUnit{\nonexistentunitjustforprefixes}{\relax}
 
 % Header
 \lhead{Novice License (HB3)}
