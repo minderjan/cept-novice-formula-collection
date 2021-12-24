@@ -11,6 +11,10 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage{tcolorbox}
+\usepackage{sectsty}
+\usepackage{subfigure}
+\usepackage[export]{adjustbox}
+
 
 \newenvironment{Figure}
   {\par\medskip\noindent\minipage{\linewidth}}
@@ -39,23 +43,25 @@
 \rfoot{\thepage}
 \lfoot{Jan Minder}
 
+\sectionfont{\fontsize{10}{15}\selectfont}
+
 \begin{document}
 
-
-\begin{multicols}{2}
-
-    % Image: SI Calculations
-    \begin{Figure}
-        \centering
-        \tcbox[size=fbox,colback=white]{
-            \input{components/image.si-circle}
-        }
-    \end{Figure}
-
-    % Table: SI Units
-    \centering
+\begin{figure}
+  \centering
+  \subfigure{\input{components/image.si-circle}}
+  \hfill
+  \subfigure{
+    \adjustbox{valign=b}{
     \input{components/table.si-units}
+    }}
+\end{figure}
 
-\end{multicols}
+
+\input{components/transformator}
+
+\input{components/schaltungen}
+
+\input{components/frequenzen}
 
 \end{document}
