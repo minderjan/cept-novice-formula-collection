@@ -15,4 +15,4 @@ jobs:
           - uses: actions/upload-artifact@v2
             with:
               name: cept_novice_formula_collection
-              path: cept_novice_formula_collection.pdf
+              path: collection.pdf
