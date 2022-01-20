@@ -1,28 +1,19 @@
-# Novice License (HB3)
+# Formula Collection (CEPT NOVICE)
 
-## Install GUI Editor for TikZ Images
+A simple formula collection based on the public available [questionnaire](https://www.bakom.admin.ch/bakom/de/home/frequenzen-antennen/funkerpruefungen/amateurfunk-pruefungen.html) from Federal Office of Communications (switzerland).
+
+![logo](screenshot.png)
+
+## Development
+
+## Build
+
+The project requires a TeX environment including [latexmk](https://ctan.org/pkg/latexmk). 
 
 ```
-brew install tikzit
+latexmk -diagnostics --file-line-error --interaction=nonstopmode -pdf -jobname=cept_novice_formula_collection collection.tex
 ```
 
-## Missing Formulas
+## Edit TikZ Images
 
-* [ ] Knotenpunkt
-* [ ] Bauelemente Parallale / Serielschaltung
-* [ ] Frequenzhub
-* [ ] Windusverhältnis
-* [x] PEP
-* [x] Wellenwiderstand
-* [ ] Bandbreite
-* [x] Gesamtinduktivität
-
-## Theorie Nochmals Lesen
-
-* Raumwellen und Boden wellen UHF / VHF / KW
-* PEP Leistung Messen -> Ton um 100% erhöht
-* Störungen 
-* Hoch und Tiefpass filter
-* PI-Filter
-* Wellenwiederstand ist abhängig von
-* klirrfaktor
+I've used [TikZiT](https://tikzit.github.io/) for drawing TikZ Images.

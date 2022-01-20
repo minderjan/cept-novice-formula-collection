@@ -6,11 +6,15 @@
 % Node styles
 
 % Edge styles
-\tikzstyle{new edge style 0}=[-, fill={rgb,255: red,58; green,84; blue,255}]
-\tikzstyle{new edge style 1}=[-, fill={rgb,255: red,255; green,218; blue,28}]
-\tikzstyle{new edge style 2}=[-, fill={rgb,255: red,255; green,131; blue,29}]
-\tikzstyle{new edge style 3}=[-, fill={rgb,255: red,84; green,192; blue,26}]
-\tikzstyle{lightblue}=[-, fill={rgb,255: red,187; green,241; blue,255}]
-\tikzstyle{new edge style 4}=[-, fill={rgb,255: red,222; green,255; blue,178}]
-\tikzstyle{lightorange}=[-, fill={rgb,255: red,255; green,203; blue,129}]
-\tikzstyle{new edge style 5}=[-, fill={rgb,255: red,255; green,249; blue,160}]
+
+% Outer Background Colors
+\tikzstyle{resistor_background}=[-, fill={rgb,255: red,226; green,194; blue,185}] % red
+\tikzstyle{ampere_background}=[-, fill={rgb,255: red,191; green,216; blue,184}] % green
+\tikzstyle{volt_background}=[-, fill={rgb,255: red,231; green,234; blue,181}] % yellow
+\tikzstyle{watt_background}=[-, fill={rgb,255: red,184; green,191; blue,216}] % blue
+
+% Middle Background Colors
+\tikzstyle{ampere_background_inner}=[-, fill={rgb,255: red,146; green,189; blue,135}] % green darker
+\tikzstyle{watt_background_inner}=[-, fill={rgb,255: red,135; green,146; blue,189}] % blue darker
+\tikzstyle{resistor_background_inner}=[-, fill={rgb,255: red,204; green,147; blue,131}] % red darker
+\tikzstyle{volt_background_inner}=[-, fill={rgb,255: red,212; green,217; blue,121}] % yellow darker

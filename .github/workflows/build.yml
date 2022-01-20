@@ -14,5 +14,5 @@ jobs:
               root_file: collection.tex
           - uses: actions/upload-artifact@v2
             with:
-              name: collection
-              path: collection.pdf
+              name: cept_novice_formula_collection
+              path: cept_novice_formula_collection.pdf
