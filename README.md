@@ -2,6 +2,8 @@
 
 A simple formula collection based on the public available [questionnaire](https://www.bakom.admin.ch/bakom/de/home/frequenzen-antennen/funkerpruefungen/amateurfunk-pruefungen.html) from Federal Office of Communications (switzerland).
 
+> [Download as PDF](https://github.com/minderjan/cept-novice-formula-collection/releases/latest)
+
 ![logo](screenshot.png)
 
 ## Development
